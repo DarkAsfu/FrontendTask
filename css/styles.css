@@ -1,0 +1,425 @@
+/* Define the custom fonts using @font-face */
+@font-face {
+  font-family: "Hagrid";
+  src: url("../fonts/Hagrid-Regular-trial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hagrid";
+  src: url("../fonts/Hagrid-Italic-trial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Hagrid-Text";
+  src: url("../fonts/Hagrid-Text-Extrabold-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hagrid-Text";
+  src: url("../fonts/Hagrid-Text-Extrabold-Italic-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Bingardemo";
+  src: url("../font/BingardemoRegular-MAOev.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Base styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Example usage of the custom fonts */
+.custom-regular {
+  font-family: "Hagrid", sans-serif;
+}
+
+.custom-italic {
+  font-family: "Hagrid", sans-serif;
+  font-style: italic;
+}
+
+.custom-extrabold {
+  font-family: "Hagrid-Text", sans-serif;
+  font-weight: 800;
+}
+
+.custom-extrabold-italic {
+  font-family: "Hagrid-Text", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.custom-bingardemo {
+  font-family: "Bingardemo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container {
+  width: 95%;
+  max-width: 1490px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.project-section {
+  background-color: #19ec60;
+  padding: 50px 0;
+}
+
+.project-title1 {
+  font-family: "Hagrid", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #041c0c;
+  margin: 0;
+}
+
+.titleimg-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.project-title2 {
+  font-family: "Hagrid", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #041c0c;
+  margin: 0;
+}
+
+.work-img {
+  width: 343.029px;
+  height: 237.024px;
+}
+
+.arrow-svg {
+  width: 222px;
+  height: 115px;
+}
+
+@media (min-width: 640px) {
+  .project-title1 {
+    font-size: 88px;
+  }
+  .project-title2 {
+    font-size: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .project-title1 {
+    font-size: 108px;
+  }
+  .project-title2 {
+    font-size: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  .project-title1 {
+    font-size: 145px;
+  }
+  .project-title2 {
+    font-size: 250px;
+  }
+}
+@media (min-width: 1280px) {
+  .project-title1 {
+    font-size: 180px;
+  }
+  .project-title2 {
+    font-size: 290px;
+  }
+}
+@media (min-width: 1536px) {
+  .project-title1 {
+    font-size: 190px;
+  }
+  .project-title2 {
+    font-size: 310px;
+  }
+}
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -9%;
+}
+
+.spinner-link {
+  position: relative;
+}
+
+.spinner-svg {
+  width: 25px;
+  height: 25px;
+  max-width: 200px;
+  max-height: 200px;
+  animation: spin_slow 10s linear infinite;
+  padding: 1px;
+  background-color: #f1ce30;
+  border-radius: 50%;
+  color: #0d091b;
+}
+
+@media (min-width: 768px) {
+  .spinner-svg {
+    width: 14vw;
+    height: 14vw;
+  }
+}
+.inner-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  max-width: 135px;
+}
+
+@media (min-width: 768px) {
+  .inner-svg {
+    width: 9.4vw;
+    height: 9.4vw;
+  }
+}
+@keyframes spin_slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.footer {
+  background-color: #151c02;
+  color: #fff;
+}
+
+.footer-logo-div {
+  border-right: 3px solid #fff;
+  padding-right: 76px;
+}
+
+.footer-logo {
+  width: 119.06px;
+  height: 72.7px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  justify-items: baseline;
+  padding-top: 40px;
+}
+
+.footer-menu {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 2px;
+}
+
+.footer-address {
+  color: #fff;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-right: 3px solid #fff;
+  padding-right: 111px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-top: 3px solid #fff;
+  padding: 69px 0;
+}
+
+.social {
+  margin: 0 0;
+  border: 1px solid #fff;
+  padding: 20px 45px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer-address {
+    margin-top: 20px;
+  }
+  .socials {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .social {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-logo-div {
+    border-right: none;
+    padding-right: 0;
+  }
+  .footer-menu {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .footer-links {
+    border-right: none;
+    padding-right: 0;
+  }
+  .footer-address {
+    font-size: 25px;
+  }
+  .social {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  .titleimg-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-logo-div {
+    border-right: none;
+    padding-right: 0;
+  }
+  .footer-menu {
+    font-size: 18px;
+    line-height: 2px;
+  }
+  .footer-address {
+    font-size: 20px;
+  }
+  .social {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .footer-links {
+    border-right: none;
+    padding-right: 0;
+  }
+  .socials {
+    gap: 5px;
+    border-top: none;
+  }
+  .social {
+    padding: 15px;
+  }
+}
+/* Responsive styles for the new section */
+@media (max-width: 768px) {
+  .project-title1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .project-title2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .titleimg-content {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  .work-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .spinner-container {
+    margin-top: -10%;
+  }
+  .spinner-svg {
+    width: 30vw;
+    height: 30vw;
+  }
+  .inner-svg {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+@media (max-width: 480px) {
+  .project-title1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .project-title2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .titleimg-content {
+    margin-left: 0;
+  }
+  .work-img {
+    max-width: 100px;
+  }
+  .spinner-svg {
+    width: 30vw;
+    height: 30vw;
+  }
+  .inner-svg {
+    width: 20vw;
+    height: 20vw;
+  }
+  .arrow-svg {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
