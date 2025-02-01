@@ -117,9 +117,54 @@ html {
   width: 343.029px;
   height: 237.024px;
 }
-.arrow-svg{
-  width:222px ;
-  height:115px;
+.arrow-svg {
+  width: 222px;
+  height: 115px;
+}
+.hero-section {
+  background-color: #0c30ae;
+  color: #fff;
+  padding: 58px 15px;
+}
+.hero-title {
+  color: #fff;
+  font-size: 180px;
+  line-height: 180px;
+  text-transform: uppercase;
+}
+.sub-text {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.hero-content2 {
+  display: flex;
+  flex-shrink: inherit;
+}
+.img1 {
+  width: 575px;
+}
+.images{
+  display: flex;
+  justify-content: end;
+  gap: 20.22px;
+}
+.slider-img {
+  width: 181px;
+  height: 174.036px;
+  flex-shrink: 0;
+}
+.section-mail {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 @media (min-width: 640px) {
   .project-title1 {
@@ -128,7 +173,6 @@ html {
   .project-title2 {
     font-size: 150px;
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -181,11 +225,12 @@ html {
 .spinner-svg {
   width: 25px;
   height: 25px;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 379px;
+  max-height: 378px;
   animation: spin_slow 10s linear infinite;
   padding: 1px;
-  background-color: #f1ce30;
+  background-color: #fff;
+  border: 1px solid #1C2503;
   border-radius: 50%;
   color: #0d091b;
 }
@@ -202,16 +247,20 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16px;
-  height: 16px;
-  max-width: 135px;
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  border-radius: 50%;
+  max-width: 80px;
+  background: #1C2503;
 }
 
 @media (min-width: 768px) {
-  .inner-svg {
-    width: 9.4vw;
-    height: 9.4vw;
-  }
+  // .inner-svg {
+  //   width: 5.4vw;
+  //   height: 5.4vw;
+  //   padding: 0 0px;
+  // }
 }
 
 @keyframes spin_slow {
@@ -386,11 +435,8 @@ html {
   .project-title2 {
     font-size: 50px;
     text-align: center;
-    
   }
   .titleimg-content {
-    // flex-direction: column;
-    // align-items: center;
     margin-bottom: 15px;
     margin-left: 0;
   }
@@ -407,8 +453,10 @@ html {
     height: 30vw;
   }
   .inner-svg {
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 22vw;
+    padding: 0 35px;
+    border-radius: 100%;
   }
 }
 
@@ -432,11 +480,12 @@ html {
     height: 30vw;
   }
   .inner-svg {
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
+    padding: 15px;
   }
-  .arrow-svg{
-    width:80px ;
-    height:30px;
+  .arrow-svg {
+    width: 80px;
+    height: 30px;
   }
 }
